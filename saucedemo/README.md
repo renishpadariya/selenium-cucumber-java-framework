@@ -8,22 +8,34 @@ This project uses Selenium WebDriver with Java, Maven, and Cucumber to implement
 
 SauceDemo
 ├── src
-│   ├── main
-│   │   └── java
-│   │       ├── com/qa/factory        # DriverFactory class
-│   │       ├── com/qa/pages          # Page Object classes
-│   │       └── com/qa/util           # Utility class, Configuration Reader
-│   └── test
-│       ├── java
-│       │   ├── apphooks              # Test hooks class
-│       │   ├── stepdefinitions       # Step definition classes
-│       │   └── testrunners           # Test runner class
-│       └── resources
-│           ├── config                # Configuration properties file
-│           └── features              # Feature files for BDD tests
-├── pom.xml                           # Maven configuration
-└── .gitignore                        # Ignored files/folders
+│ ├── main
+│ │ 
+    └── java
+│ │    ├── com/qa/factory # DriverFactory class
+│ │ 
+       ├── com/qa/pages # Page Object classes
+│ │ 
+       └── com/qa/util # Utility classes, Configuration Reader
+│ 
+  └── test
+│   
+    ├── java
+│ │   
+       ├── apphooks # Test hooks classes
+│ │  
+       ├── stepdefinitions # Step definition classes
+│ │  
+       └── testrunners # JUnit test runner classes
+│ 
+     └── resources
+│     
+       ├── config # Configuration properties files
+│ 
+       └── features # Feature files for BDD tests
 
+├── pom.xml # Maven configuration
+
+└── .gitignore # Ignored files/folders
 ---
 
 ## Technologies Used
@@ -54,4 +66,3 @@ SauceDemo
 
    - **From Eclipse:** Right-click on your test runner classes → Run As → JUnit Test
 
-From terminal: Navigate to project root and run:
