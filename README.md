@@ -6,18 +6,14 @@
 A Selenium WebDriver automation framework built using **Java, Maven, and Cucumber (BDD)** to implement automated UI tests for the **SauceDemo** web application.
 
 This project demonstrates **real-world automation framework design**, **BDD implementation**, and **CI/CD integration using GitHub Actions**, along with **live HTML test reporting** via GitHub Pages.
-
 ---
-
 ## 🔗 Application Under Test
 
 **SauceDemo**  
 👉 https://www.saucedemo.com  
 
 A public demo application used to showcase automation framework capabilities and best practices.
-
 ---
-
 ## 🚀 Key Features
 
 - Behaviour Driven Development (BDD) using **Cucumber & Gherkin**
@@ -26,9 +22,7 @@ A public demo application used to showcase automation framework capabilities and
 - Centralised configuration using 'config.properties'
 - Automated execution via **GitHub Actions (CI)**
 - **Live Cucumber HTML test reports** published using **GitHub Pages**
-
 ---
-
 ## 🧰 Technologies Used
 
 - **Java 17**
@@ -44,7 +38,6 @@ A public demo application used to showcase automation framework capabilities and
 ## 📁 Project Structure
 
 ![SauceDemo Project Structure](saucedemo/images/project-structure.png)
-
 ---
 ## ⚙️ Configuration
 
@@ -54,9 +47,13 @@ src/test/resources/config/config.properties
 
 Example:
 'properties'
+
 browser=chrome
+
 url=https://www.saucedemo.com/
+
 username=standard_user
+
 password=secret_sauce
 
 ---
@@ -65,6 +62,7 @@ password=secret_sauce
 1. **Clone the repository**  
 
    git clone https://github.com/renishpadariya/selenium-cucumber-java-framework.git
+
    cd selenium-cucumber-java-framework
 
 3. **Import the project into Eclipse**
@@ -75,7 +73,9 @@ password=secret_sauce
    - Maven will automatically download required dependencies from pom.xml
 
 5. **Run tests**
+
 From Eclipse:
+
 Right-click on your test runner classes → Run As → JUnit Test
 
 ---
