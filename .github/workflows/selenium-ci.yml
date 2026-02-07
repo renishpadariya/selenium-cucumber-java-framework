@@ -1,5 +1,8 @@
 name: Selenium Cucumber CI
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
@@ -40,4 +43,15 @@ jobs:
         name: cucumber-test-reports
         path: saucedemo/target
 
+    - name: Prepare report for GitHub Pages
+      if: always()
+      run: |
+        mkdir -p public
+        cp saucedemo/target/index.html public/index.html
 
+    - name: Deploy HTML Report to GitHub Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: public
